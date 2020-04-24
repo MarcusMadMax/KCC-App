@@ -1,0 +1,768 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style-type: none;
+}
+
+.basicAppStyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.basicAppStyle header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5em 0;
+  background-color: #7FB500;
+}
+
+.basicAppStyle header .avatar img {
+  display: block;
+  border: 3px solid #D82827;
+  border-radius: 50%;
+  width: 5.6em;
+}
+
+.basicAppStyle header .h1h2 {
+  color: #F4D308;
+}
+
+.basicAppStyle header .h1h2 h1 {
+  font-size: 1.5em;
+}
+
+.basicAppStyle header .h1h2 h1 span {
+  color: #D82827;
+}
+
+.basicAppStyle header .h1h2 h2 {
+  font-size: 1.25em;
+}
+
+.basicAppStyle header .h1h2 a {
+  text-decoration: none;
+  color: #D82827;
+  font-size: 1.5em;
+}
+
+.basicAppStyle header .settings {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  position: relative;
+}
+
+.basicAppStyle header .settings i {
+  color: #4C3C72;
+  font-size: 2em;
+}
+
+.basicAppStyle main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  position: relative;
+}
+
+.basicAppStyle main .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.basicAppStyle footer {
+  background-color: #7FB500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: .5em 0;
+}
+
+.basicAppStyle footer .footerNav {
+  width: 5em;
+  text-align: center;
+  font-size: 1.25em;
+  color: #4C3C72;
+}
+
+.basicAppStyle footer .footerNav span {
+  color: #D82827;
+}
+
+.basicAppStyle footer .footerNav a {
+  color: #4C3C72;
+}
+
+.basicAppStyle footer .footerNav i {
+  font-size: 2em;
+}
+
+.firstFour {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.firstFour header {
+  color: #F4D308;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  font-weight: 600;
+}
+
+.firstFour header :nth-child(1)::after {
+  content: '';
+  border: 0.5px dotted #F4D308;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.firstFour .section1 img {
+  height: 50vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.firstFour .section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.firstFour .section2 p {
+  font-size: 1.25em;
+  color: #F4D308;
+  width: 80vw;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.firstFour .firstFourFooter {
+  position: absolute;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  left: 50%;
+  bottom: 2em;
+}
+
+.findingsDetails .container .description {
+  width: 80vw;
+  margin: 13em auto 2em auto;
+}
+
+.findingsDetails .container .description a {
+  text-decoration: none;
+  color: #BC7F30;
+}
+
+.findingsDetails .container .description span {
+  font-size: .8em;
+}
+
+.findingsDetails .container h1 {
+  color: #F4D308;
+  font-size: 1.5em;
+  margin: .5em 0;
+}
+
+.findingsDetails .container img {
+  width: 100vw;
+  height: 30vh;
+  position: fixed;
+}
+
+.settingsPage header {
+  padding: .5em 3em;
+}
+
+.settingsPage header .settings i {
+  color: #D82827;
+}
+
+.settingsPage header h1 {
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+.settingsPage .main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  position: relative;
+}
+
+.settingsPage .container {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(images/manaia-land.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #F4D308;
+}
+
+.settingsPage .container ul {
+  padding: 0 3em;
+  color: #4C3C72;
+}
+
+.settingsPage .container li {
+  border-bottom: 1px dotted #BC7F30;
+  padding-bottom: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 1em 0;
+}
+
+.settingsPage .container li span {
+  text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 auto;
+          flex: 1 auto;
+}
+
+.settingsPage .container li hr {
+  border-width: 1px;
+  display: block;
+  z-index: 100;
+}
+
+.settingsPage .container #language {
+  color: #D82827;
+}
+
+.settingsPage .container a {
+  text-decoration: none;
+  color: #4C3C72;
+}
+
+.settingsPageOverlay .overlay {
+  position: absolute;
+  left: 50%;
+  top: 2em;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  background-color: #FFFFFF;
+  width: 70vw;
+  height: 70vh;
+  color: #4C3C72;
+}
+
+.settingsPageOverlay .overlay .chla :after {
+  content: "";
+  display: block;
+  border: 0.5px solid rgba(76, 60, 114, 0.1);
+  border-radius: 2px;
+  width: 60vw;
+  margin: 1em auto;
+}
+
+.settingsPageOverlay .overlay h1 {
+  font-size: 1.3em;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.settingsPageOverlay .overlay ul {
+  margin: 0;
+  padding: 0;
+}
+
+.settingsPageOverlay .overlay li {
+  font-size: 1.2em;
+  margin: 0;
+  border: none;
+  padding: 1em;
+}
+
+.settingsPageOverlay .overlay li a {
+  color: #4C3C72;
+  white-space: pre;
+}
+
+.settingsPageOverlay .overlay li span {
+  color: #D82827;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#logo-loading {
+  background-color: #7FB500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#logo-loading img {
+  width: 80vw;
+}
+
+.intro {
+  background-color: #7FB500;
+}
+
+.intro .logo-introduction {
+  text-align: center;
+  padding-top: 6em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.intro .logo-introduction img {
+  width: 50vw;
+}
+
+.intro .explore {
+  color: #F4D308;
+  text-align: center;
+}
+
+.intro .explore :nth-child(1) {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.intro .explore :nth-child(2) {
+  font-weight: 600;
+  padding-top: .5em;
+  text-transform: uppercase;
+}
+
+.intro .fb-logo {
+  text-align: center;
+}
+
+.intro .fb-logo img {
+  width: 60vw;
+  margin-bottom: 2em;
+}
+
+.observe {
+  background-color: #BC7F30;
+}
+
+.identify {
+  background-color: #7FB500;
+}
+
+.discuss {
+  background-color: #4C3C72;
+}
+
+.login {
+  height: 100vh;
+  background-color: #7FB500;
+  background-image: url(images/manaia-land.svg);
+  background-repeat: no-repeat;
+}
+
+.login .logo-login {
+  text-align: center;
+}
+
+.login .logo-login img {
+  width: 80vw;
+  margin: 5em auto;
+}
+
+.login .loginOptions {
+  margin: 3em auto;
+  width: 80vw;
+}
+
+.login .loginOptions div {
+  background-color: rgba(255, 255, 255, 0.25);
+  margin: 1.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  border-radius: .25em;
+}
+
+.login .loginOptions a {
+  display: table-row;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.4em;
+}
+
+.login .loginOptions span {
+  padding-left: .6em;
+}
+
+.login .loginOptions i {
+  border: 2px solid rgba(76, 60, 114, 0.05);
+  text-align: center;
+  width: 1.5em;
+  padding: .5em;
+}
+
+.login .footerLogin {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #4C3C72;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.login .footerLogin span {
+  font-weight: 700;
+  color: #FFFFFF;
+  padding-left: 1em;
+}
+
+.me .container a {
+  text-decoration: none;
+}
+
+.me .container .capture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: .5em;
+  margin: .25em 0;
+  position: relative;
+}
+
+.me .container img {
+  width: 4em;
+  height: 2.5em;
+  border: 2px solid #D82827;
+  margin-right: .5em;
+}
+
+.me .container .description h2 {
+  font-size: 1.25em;
+  color: #F4D308;
+}
+
+.me .container .description p {
+  font-size: .9em;
+  color: #4C3C72;
+}
+
+.me .container .date {
+  font-size: .9em;
+  color: #4C3C72;
+}
+
+.me .container .hello {
+  font-size: 2em;
+  text-align: center;
+}
+
+.me .container hr {
+  border: 0.25px dotted #4C3C72;
+  width: 70%;
+  margin: .5em auto;
+}
+
+.explorePage .container {
+  height: 100%;
+  width: 100%;
+}
+
+.observePage .container #camera, .observePage .container #camera--view, .observePage .container #camera--sensor, .observePage .container #camera--output {
+  position: fixed;
+  z-index: 2;
+  height: 70.6vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.observePage .container #camera--view, .observePage .container #camera--sensor, .observePage .container #camera--output {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+}
+
+.observePage .container #camera--trigger {
+  background-color: #F4D308;
+  color: #D82827;
+  font-size: 1.5em;
+  border-radius: 50%;
+  padding: .6em;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 10px 0 black;
+          box-shadow: 2px 2px 10px 0 black;
+  position: fixed;
+  bottom: .5em;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.observePage .container .taken {
+  height: 100px !important;
+  width: 100px !important;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  border: solid 3px white;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.observePage footer .camera, .observePage footer span {
+  display: none;
+}
+
+.mySettings header h1 {
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+.mySettings header .settings i {
+  color: #D82827;
+}
+
+.mySettings .formGroup {
+  margin: 1em 0;
+  padding: 0 2em;
+  color: #4C3C72;
+  font-size: 1.6em;
+}
+
+.mySettings .formGroup input {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: .75em;
+  color: #BC7F30;
+  outline: none;
+}
+
+.mySettings .formGroup input[type=text] {
+  width: 80vw;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border-bottom: 1px solid rgba(76, 60, 114, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mySettings .formGroup .form-control {
+  width: 80vw;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border-bottom: 1px solid rgba(76, 60, 114, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.mySettings .formGroup .field-icon {
+  float: right;
+  margin-left: -1em;
+  margin-top: -1.75em;
+  position: relative;
+  z-index: 2;
+}
+
+.mySettings .submit {
+  text-align: center;
+}
+
+.mySettings .submit input[type=submit] {
+  width: 50vw;
+  font-size: 1.2em;
+  background-color: #7FB500;
+  color: #FFFFFF;
+  padding: 14px 20px;
+  margin: .5em 0;
+  letter-spacing: .2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mySettings h2 {
+  font-weight: 300;
+  color: #4C3C72;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.mySettings #avatar {
+  border: 2px solid red;
+  background-image: url(images/Tim-Burton.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.helpFeedback header h1 {
+  color: #FFFFFF;
+  font-weight: 300;
+}
+
+.helpFeedback header .settings i {
+  color: #D82827;
+}
+
+.helpFeedback .container h2 {
+  font-size: 1.8em;
+  margin: 1em auto;
+  text-align: center;
+  color: #4C3C72;
+}
+
+.helpFeedback .container .stars {
+  color: #D82827;
+  font-size: 3em;
+  text-align: center;
+}
+
+.helpFeedback .container p {
+  color: #4C3C72;
+  width: 50vw;
+  font-size: 0.7em;
+  margin: 0 auto 1.9em auto;
+}
+
+.helpFeedback .container .formGroup {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.helpFeedback .container .formGroup label {
+  font-size: 1.5em;
+  color: #4C3C72;
+}
+
+.helpFeedback .container .formGroup textarea {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100%;
+  font-size: 1em;
+  padding: .5em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.helpFeedback .container .faq {
+  width: 90vw;
+  margin: 1.5em auto;
+  color: #4C3C72;
+}
+
+.helpFeedback .container .faq h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.helpFeedback .container .faq p {
+  margin-top: 1.5em;
+  width: 100%;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: .1em;
+}
+
+.friends .container {
+  background-image: url(images/manaia-land.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #F4D308;
+}
+
+.friends .container ul {
+  margin-top: 2em;
+}
+
+.friends .container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 1em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 0.5px dotted rgba(76, 60, 114, 0.25);
+}
+
+.friends .container img {
+  width: auto;
+  height: 5.6em;
+  border-radius: 50%;
+  border: 3px solid #D82827;
+}
+
+.friends .container .friendName {
+  padding-left: 2em;
+  color: #4C3C72;
+}
+
+.friends .container hr {
+  border: 0.25px dotted rgba(76, 60, 114, 0.25);
+  width: 80vw;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

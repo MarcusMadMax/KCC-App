@@ -1,0 +1,30 @@
+.findingsDetails{
+    .container{
+
+        .description{
+            width: 80vw;
+            margin: 13em auto 2em auto;
+
+            a{
+                text-decoration: none;
+                color: $neutral-color;
+            }
+
+            span{
+                font-size: .8em;
+            }
+        }
+
+        h1{
+            color: $shine-color;
+            font-size: 1.5em;
+            margin: .5em 0;
+        }
+
+        img{
+            width: 100vw;
+            height: 30vh;
+            position: fixed;
+        }
+    }
+}

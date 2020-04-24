@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Log In</title>
+</head>
+
+<body>
+    <div id="firstFour" class="login">
+        <div class="logo-login">
+            <img src="images/KCC-Logo-White.png" alt="Kids Conservation Club logo">
+        </div>
+        <div class="loginOptions">
+            <div><a href="#"><i class="fab fa-facebook-f"></i><span>Log in with Facebook</span></a></div>
+            <div><a href="#"><i class="fab fa-google-plus-g"></i><span>Log in with Google+</span></a></div>
+            <div><a href="#"><i class="far fa-envelope"></i><span>Sign up with e-mail</span></a></div>
+        </div>
+        <div class="footerLogin">
+            <p>Already have an account?<span> Log In</span></p>
+        </div>
+    </div>
+
+    <script>
+        var myElement = document.getElementById('firstFour');
+        var hammer = new Hammer.Manager(myElement);
+        var swipe = new Hammer.Swipe();
+        hammer.add(swipe);
+        hammer.on('swipeleft', function () {
+            window.location = 'me.html';
+        });
+        hammer.add(swipe);
+        hammer.on('swiperight', function () {
+            window.location = 'discuss.html';
+        });
+    </script>
+
+</body>
+
+</html>

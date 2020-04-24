@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Introduction</title>
+</head>
+
+<body>
+    <div id="firstFour" class="intro firstFour">
+        <div class="logo-introduction">
+            <img src="images/KCC-Logo-White.png" alt="Kids Conservation Club logo">
+        </div>
+        <div class="explore">
+            <h2>Explore Nature<br>Inspire lifes</h2>
+            <h2>Swipe ></h2>
+        </div>
+        <div class="fb-logo">
+            <img src="images/FB-Logo-Horizontal-White.png" alt="Forest & Bird logo">
+        </div>
+        <div class="firstFourFooter">
+            <img src="images/Page-indicator1.png" alt="Page indicator">
+        </div>
+    </div>
+
+    <script>
+    var myElement = document.getElementById('firstFour');
+        var hammer    = new Hammer.Manager(myElement);
+        var swipe     = new Hammer.Swipe();
+        hammer.add(swipe);
+        hammer.on('swipeleft', function(){
+        window.location = 'observe.html';       
+        });
+        hammer.add(swipe);
+        hammer.on('swiperight', function(){
+        window.location = 'loading.html';
+        });
+        </script>
+
+</body>
+
+</html>

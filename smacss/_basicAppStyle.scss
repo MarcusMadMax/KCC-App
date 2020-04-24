@@ -1,0 +1,105 @@
+$main-color: #7FB500;
+$shine-color: #F4D308;
+$highligt-color:#D82827;
+$neutral-color: #BC7F30;
+$text-color: #4C3C72;
+$light-color: #FFFFFF;
+
+
+
+.basicAppStyle{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: .5em 0;
+        background-color: $main-color;
+
+        .avatar{
+
+            img{
+                display: block;
+                border: 3px solid $highligt-color;
+                border-radius: 50%;
+                width: 5.6em;
+            }
+        }
+
+        .h1h2{
+            color: $shine-color;
+
+            h1{
+                font-size: 1.5em;
+
+                span{
+                    color: $highligt-color;
+                }
+            }
+
+            h2{
+                font-size: 1.25em;
+            }
+
+            a{
+                text-decoration: none;
+                color: $highligt-color;
+                font-size: 1.5em;
+            }
+        }
+
+        .settings{
+            align-self: flex-start;
+            position: relative;
+            
+            i{
+                color: $text-color;
+                font-size: 2em;
+            }
+        }
+    }
+
+    main{
+        flex: 1 0 auto;
+        position: relative;
+
+        .container{
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            overflow-y:auto;
+        }
+    }
+
+    footer{
+        background-color: $main-color;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: .5em 0;
+
+        .footerNav{
+            width: 5em;
+            text-align: center;
+            font-size: 1.25em;
+            color: $text-color;
+
+            span{
+                color: $highligt-color;
+            }
+
+            a{
+                color: $text-color;
+            }
+
+            i{
+                font-size: 2em;
+            }
+        }
+    }  
+}

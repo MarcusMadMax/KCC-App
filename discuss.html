@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Discuss</title>
+</head>
+
+<body>
+    <div id="firstFour" class="discuss firstFour">
+        <header class="firstFourHeader">
+            <h2>aparau</h2>
+            <h2>Discuss</h2>
+        </header>
+
+        <div class="section1">
+            <img src="images/Kids-Discussing.png" alt="Kids talking to each other">
+        </div>
+
+        <div class="section2">
+            <p>
+                Share and discuss
+                your observations
+                and photos with
+                your e hoa / friends.
+            </p>
+        </div>
+
+        <div class="firstFourFooter">
+            <img src="images/Page-indicator4.png" alt="Page indicator for page3">
+        </div>
+    </div>
+
+    <script>
+        var myElement = document.getElementById('firstFour');
+        var hammer = new Hammer.Manager(myElement);
+        var swipe = new Hammer.Swipe();
+        hammer.add(swipe);
+        hammer.on('swipeleft', function () {
+            window.location = 'login.html';
+        });
+        hammer.add(swipe);
+        hammer.on('swiperight', function () {
+            window.location = 'identify.html';
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+$main-color: #7FB500;
+$shine-color: #F4D308;
+$highligt-color:#D82827;
+$neutral-color: #BC7F30;
+$text-color: #4C3C72;
+$light-color: #FFFFFF;
+
+
+.firstFour{
+    height: 100vh;
+    display: grid;
+    align-content: space-around;
+
+    header{
+        color: $shine-color;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .5em;
+        font-weight: 600;
+
+            :nth-child(1)::after{
+                content: '';
+                border: .5px dotted $shine-color;
+                display: block;
+                width: 50%;
+                margin: 0 auto;
+            }
+    }
+
+    .section1{
+
+        img{
+            height: 50vw;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .section2{
+        display: flex;
+        justify-content: center;
+
+        p{
+            font-size: 1.25em;
+            color: $shine-color;
+            width: 80vw;
+            text-align: center;
+            margin-bottom: 3em;
+        }
+    }
+
+    .firstFourFooter{
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        bottom: 2em;
+    }
+}

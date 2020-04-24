@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Observe</title>
+</head>
+
+<body>
+    <div class="observePage basicAppStyle">
+        <header>
+            <div class="avatar">
+                <img src="images/Tim-Burton.png" alt="User avatar">
+            </div>
+            <div class="h1h2">
+                <h1>Haere Tonu<br><span>Timmy</span></h1>
+                <h2>Make a snap shot</h2>
+            </div>
+            <!-- <div class="translation"><p>Keep Going<br><span>Te Reo Maori</span></p></div> -->
+            <div class="settings"><a href="settings.html"><i class="fas fa-cog"></i></a></div>
+        </header>
+        <main>
+            <div class="container">
+
+                <!-- Camera -->
+                <div id="camera">
+                    <!-- Camera sensor -->
+                    <canvas id="camera--sensor"></canvas>
+                    <!-- Camera view -->
+                    <video id="camera--view" autoplay playsinline></video>
+                    <!-- Camera output -->
+                    <img src="//:0" alt="" id="camera--output">
+                    <!-- Camera trigger -->
+                    <button id="camera--trigger"><i class="fas fa-circle-notch"></i></button>
+                </div>
+                <!-- Reference to your JavaScript file -->
+                <script src="style.js"></script>
+
+            </div>
+        </main>
+        <footer>
+            <div class="footerNav"><a href="explorePage.html"><i class="fas fa-globe"></i></a>
+                <p>Explore</p>
+            </div>
+            <div class="footerNav"><a href="observePage.html"><span><i class="fas camera fa-camera"></i></span></a>
+                <p><span>Observe</span></p>
+            </div>
+            <div class="footerNav"><a href="me.html"><i class=" fas fa-user-alt"></i></a>
+                <p>Me</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

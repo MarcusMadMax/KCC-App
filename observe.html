@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Observe</title>
+</head>
+
+<body>
+    <div id="firstFour" class="observe firstFour">
+        <header>
+            <h2>Matakai</h2>
+            <h2>Observe</h2>
+        </header>
+
+        <div class="section1">
+            <img src="images/Kids-exploring.png" alt="Kids exploring nature">
+        </div>
+
+        <div class="section2">
+            <p>
+                Get outside and explore our<br>
+                beautiful wildlife.<br>
+                Take photos. Make notes.<br>
+                May be you parents want to<br>
+                join in and help you<br>
+                understand.
+            </p>
+        </div>
+
+        <div class="firstFourFooter">
+            <img src="images/Page-indicator2.png" alt="Page indicator for page2">
+        </div>
+    </div>
+
+    <script>
+    var myElement = document.getElementById('firstFour');
+        var hammer    = new Hammer.Manager(myElement);
+        var swipe     = new Hammer.Swipe();
+        hammer.add(swipe);
+        hammer.on('swipeleft', function(){
+        window.location = 'identify.html';       
+        });
+        hammer.add(swipe);
+        hammer.on('swiperight', function(){
+        window.location = 'introduction.html';
+        });
+        </script>
+
+</body>
+
+</html>

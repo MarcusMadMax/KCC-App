@@ -1,0 +1,71 @@
+.settingsPage{
+
+    header{ 
+        padding: .5em 3em;
+
+        .settings{
+        
+            i{
+                color: $highligt-color;
+            }
+        }
+
+        h1{
+            color: $light-color;
+            font-weight: 300;
+        }
+    }
+
+    .main{
+        flex: 1 0 auto;
+        position: relative;
+    }
+    
+    .container{
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-image: url(images/manaia-land.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: $shine-color;
+
+        ul{
+            padding: 0 3em;
+            color: $text-color;
+        }
+
+        li{
+        border-bottom: 1px dotted $neutral-color;
+        padding-bottom: 1em;
+        display: flex;
+        font-size: 1.5em;
+        font-weight: 300;
+        margin: 1em 0;
+
+        span{
+            text-align: right;
+            flex: 1 auto;
+        }
+
+        hr{
+            border-width: 1px;
+            display: block;
+            z-index: 100;
+        }
+        }
+
+        #language{
+            color: $highligt-color;
+        }
+
+        a{
+            text-decoration: none;
+            color: $text-color;
+        }
+    }
+}

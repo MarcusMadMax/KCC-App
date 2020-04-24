@@ -1,0 +1,54 @@
+.settingsPageOverlay{
+
+    .overlay{
+        position: absolute;
+        left: 50%;
+        top: 2em;
+        transform: translate(-50%);
+        background-color: $light-color;
+        width: 70vw;
+        height: 70vh;
+        color: $text-color;
+
+        .chla{
+
+            :after{
+                content: "";
+                display: block;
+                border: .5px solid rgba($color: $text-color, $alpha: 0.1);
+                border-radius: 2px;
+                width: 60vw;
+                margin: 1em auto;
+            }
+        }
+
+        h1{
+            font-size: 1.3em;
+            font-weight: 400;
+            text-align: center;
+            padding-top: 1em;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        li{
+            // border: none;
+            font-size: 1.2em;
+            margin: 0;
+            border: none;
+            padding: 1em;
+
+            a{
+                color: $text-color;
+                white-space: pre;
+            }
+        
+            span{
+                color: $highligt-color;
+            }
+        }
+    }
+}
