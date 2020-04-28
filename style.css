@@ -721,9 +721,42 @@ body {
 }
 
 .helpFeedback .container .stars {
-  color: #D82827;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.helpFeedback .container .stars > input {
+  display: none;
+}
+
+.helpFeedback .container .stars > label:before {
+  margin: 5px;
   font-size: 3em;
-  text-align: center;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.helpFeedback .container .stars > .half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.helpFeedback .container .stars > label {
+  color: #FFFFFF;
+}
+
+.helpFeedback .container .stars > input:checked + label,
+.helpFeedback .container .stars > input:checked ~ label:hover ~ label {
+  color: #D82827;
 }
 
 .helpFeedback .container p {

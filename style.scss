@@ -517,10 +517,38 @@ body{
         }
 
         .stars{
-            color: $highligt-color;
-            font-size: 3em;
-            text-align: center;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
         }
+
+        .stars > input{
+            display: none;
+        } 
+        
+        .stars > label:before{ 
+            margin: 5px;
+            font-size: 3em;
+            font-family: FontAwesome;
+            display: inline-block;
+            content: "\f005";
+        }
+
+        .stars > .half:before { 
+            content: "\f089";
+            position: absolute;
+        }
+
+        .stars > label {
+            color: $light-color;
+        }
+
+        .stars > input:checked + label,
+        .stars > input:checked ~ label:hover ~ label {
+            color: $highligt-color;
+        } 
+
+
 
         p{
             color: $text-color;
