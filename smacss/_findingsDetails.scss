@@ -1,3 +1,11 @@
+$main-color: #7FB500;
+$shine-color: #F4D308;
+$highligt-color:#D82827;
+$neutral-color: #BC7F30;
+$text-color: #4C3C72;
+$light-color: #FFFFFF;
+
+
 .findingsDetails{
     .container{
 
@@ -25,6 +33,15 @@
             width: 100vw;
             height: 30vh;
             position: fixed;
+        }
+
+        button{
+            font-size: 1em;
+            padding: .2em .5em;
+            margin-top: 1em;
+            color: $light-color;
+            background-color: $highligt-color;
+            border-radius: 3px;
         }
     }
 }

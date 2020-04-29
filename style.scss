@@ -16,6 +16,9 @@
 
 @import 'smacss/settingsPageOverlay';
 
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+
 
 $main-color: #7FB500;
 $shine-color: #F4D308;
@@ -576,23 +579,69 @@ body{
             }
         }
 
+        .submit{
+            text-align: center;
+    
+            input[type=submit]{
+                width: 50vw;
+                font-size: 1.2em;
+                background-color: $highligt-color;
+                color: $light-color;
+                padding: 14px 20px;
+                margin: .5em 0;
+                letter-spacing: .2em;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+        }
+
         .faq{
             width: 90vw;
             margin: 1.5em auto;
             color: $text-color;
 
-            h3{
-                font-size: 1.5em;
-                font-weight: 400;
+            .collapsible {
+                background-color: rgba($color: $main-color, $alpha: .5);
+                color: $text-color;
+                cursor: pointer;
+                margin-top: .5em;
+                padding: .5em;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 1em;
             }
 
-            p{
-                margin-top: 1.5em;
-                width: 100%;
-                font-weight: 300;
+            .collapsible:after {
+                content: '\02795';
                 font-size: 1em;
-                line-height: .1em;
+                float: right;
+                margin-left: 5px;
+              }
+  
+            .active, .collapsible{
+                background-color: rgba($color: $main-color, $alpha: .5);
             }
+
+            .active:after {
+                content: "\2796";
+              }
+  
+            .content {
+                padding: 0;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+
+                p{
+                    padding-top: 2em;                    
+                    width: 80%;
+                }
+            }
+
         }
     }
 }
@@ -638,13 +687,15 @@ body{
         .friendName{
             padding-left: 2em;
             color: $text-color;
-
         }
 
-        hr{
-            border: .25px dotted rgba($color: $text-color, $alpha: .25);
-            width: 80vw;
-            margin: 0 auto;
+        button{
+            margin: .5em 0;
+            font-size: .5em;
+            background-color: $highligt-color;
+            color: $light-color;
+            padding: .5em;
+            border-radius: 3px;
         }
     }
 }

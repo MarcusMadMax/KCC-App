@@ -36,7 +36,7 @@
 
                     <input type="radio" id="star3half" name="rating" value="3 and a half" />
                     <label class="half" for="star3half"></label>
-                    
+
                     <input type="radio" id="star3" name="rating" value="3" />
                     <label class="full" for="star3"></label>
 
@@ -66,11 +66,31 @@
                     <textarea id="better" name="better" rows="3" cols="33">
                     </textarea>
                 </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
                 <div class="faq">
                     <h3>FAQ <i class="fas fa-sort-down"></i></h3>
-                    <p>How do I share my pictures? ></p>
-                    <p>How do I drop a pin on the map? ></p>
-                    <p>How do I share my pictures? ></p>
+
+                    <button type="button" class="collapsible">What is the Treaty of Waitangi?</button>
+                    <div class="content">
+                        <p>The Treaty of Waitangi is New Zealand’s founding document. It takes its name from the place
+                            in the Bay of Islands where it was first signed, on 6 February 1840. This day is now a
+                            public holiday in New Zealand. The Treaty is an agreement, in Māori and English, that was
+                            made between the British Crown and about 540 Māori rangatira (chiefs).</p>
+                    </div>
+                    <button type="button" class="collapsible">How do I share my pictures?</button>
+                    <div class="content">
+                        <p>First you have to find freinds from the explore tab.Friends are registered people to the app that have droped a pin where they reported an entry. Then you can send them a friend request. Once thwy agrred to be your friends you can add them to your friends list by clicking the "add to friends" button.</p>
+                    </div>
+                    <button type="button" class="collapsible">How do I drop a pin on the map?</button>
+                    <div class="content">
+                        <p>Unfortunately I do not know how to do this yet</p>
+                    </div>
+                    <button type="button" class="collapsible">How do I share my pictures?</button>
+                    <div class="content">
+                        <p>First you have to find freinds from the explore tab or your friends page. Then you can share the pictures and comments with them via the app.</p>
+                    </div>
                 </div>
             </div>
         </main>
@@ -86,6 +106,24 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
 </body>
 
 </html>

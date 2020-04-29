@@ -1,3 +1,4 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 * {
   margin: 0;
   padding: 0;
@@ -20,12 +21,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: .5em 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .7em;
   background-color: #7FB500;
 }
 
@@ -198,8 +197,13 @@
   position: fixed;
 }
 
-.settingsPage header {
-  padding: .5em 3em;
+.findingsDetails .container button {
+  font-size: 1em;
+  padding: .2em .5em;
+  margin-top: 1em;
+  color: #FFFFFF;
+  background-color: #D82827;
+  border-radius: 3px;
 }
 
 .settingsPage header .settings i {
@@ -786,23 +790,69 @@ body {
   outline: none;
 }
 
+.helpFeedback .container .submit {
+  text-align: center;
+}
+
+.helpFeedback .container .submit input[type=submit] {
+  width: 50vw;
+  font-size: 1.2em;
+  background-color: #D82827;
+  color: #FFFFFF;
+  padding: 14px 20px;
+  margin: .5em 0;
+  letter-spacing: .2em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .helpFeedback .container .faq {
   width: 90vw;
   margin: 1.5em auto;
   color: #4C3C72;
 }
 
-.helpFeedback .container .faq h3 {
-  font-size: 1.5em;
-  font-weight: 400;
+.helpFeedback .container .faq .collapsible {
+  background-color: rgba(127, 181, 0, 0.5);
+  color: #4C3C72;
+  cursor: pointer;
+  margin-top: .5em;
+  padding: .5em;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1em;
 }
 
-.helpFeedback .container .faq p {
-  margin-top: 1.5em;
-  width: 100%;
-  font-weight: 300;
+.helpFeedback .container .faq .collapsible:after {
+  content: '\02795';
   font-size: 1em;
-  line-height: .1em;
+  float: right;
+  margin-left: 5px;
+}
+
+.helpFeedback .container .faq .active, .helpFeedback .container .faq .collapsible {
+  background-color: rgba(127, 181, 0, 0.5);
+}
+
+.helpFeedback .container .faq .active:after {
+  content: "\2796";
+}
+
+.helpFeedback .container .faq .content {
+  padding: 0;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.helpFeedback .container .faq .content p {
+  padding-top: 2em;
+  width: 80%;
 }
 
 .friends .container {
@@ -843,9 +893,12 @@ body {
   color: #4C3C72;
 }
 
-.friends .container hr {
-  border: 0.25px dotted rgba(76, 60, 114, 0.25);
-  width: 80vw;
-  margin: 0 auto;
+.friends .container button {
+  margin: .5em 0;
+  font-size: .5em;
+  background-color: #D82827;
+  color: #FFFFFF;
+  padding: .5em;
+  border-radius: 3px;
 }
 /*# sourceMappingURL=style.css.map */

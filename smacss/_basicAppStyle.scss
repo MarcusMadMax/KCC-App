@@ -14,9 +14,9 @@ $light-color: #FFFFFF;
 
     header{
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: .5em 0;
+        justify-content: space-between;
+        // align-items: center;
+        padding: .7em;
         background-color: $main-color;
 
         .avatar{
