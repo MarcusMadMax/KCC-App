@@ -750,6 +750,7 @@ body {
 }
 
 .helpFeedback .container .stars > .half:before {
+  font-family: FontAwesome;
   content: "\f089";
   position: absolute;
 }

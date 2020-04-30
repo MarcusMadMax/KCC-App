@@ -549,6 +549,7 @@ body{
         }
 
         .stars > .half:before { 
+            font-family: FontAwesome;
             content: "\f089";
             position: absolute;
         }
@@ -560,9 +561,7 @@ body{
         .stars > input:checked + label,
         .stars > input:checked ~ label:hover ~ label {
             color: $highligt-color;
-        } 
-
-
+        }
 
         p{
             color: $text-color;
