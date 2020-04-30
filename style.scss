@@ -18,6 +18,17 @@
 
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 
+@mixin editButton {
+    button{
+        font-size: 1em;
+        padding: .2em .5em;
+        margin-top: 1em;
+        color: $light-color;
+        background-color: $highligt-color;
+        border-radius: 3px;
+    }    
+}
+
 
 
 $main-color: #7FB500;
@@ -689,14 +700,45 @@ body{
             color: $text-color;
         }
 
-        button{
-            margin: .5em 0;
-            font-size: .5em;
-            background-color: $highligt-color;
-            color: $light-color;
-            padding: .5em;
-            border-radius: 3px;
-        }
+    @include editButton;
     }
 }
 //Friends pages ends
+
+
+//Join pages starts
+.join{
+
+    .logos{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 1em auto;
+        width: 90vw;
+
+        img{
+            height: 3em;
+        }
+    }
+
+    .membership{
+        border: 1px solid red;
+
+        h1{
+            border: 1px solid blue;
+            display: block;
+            font-size: 1.5em;
+            color: $text-color;
+
+            span{
+                background-color: $main-color;
+                border-radius: 50%;
+                color: $light-color;
+                padding: .15em .5em;
+                font-size: .5em;
+            }
+        }
+    }
+}
+//Join pages ends
+

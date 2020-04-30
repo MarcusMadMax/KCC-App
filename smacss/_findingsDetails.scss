@@ -5,6 +5,17 @@ $neutral-color: #BC7F30;
 $text-color: #4C3C72;
 $light-color: #FFFFFF;
 
+@mixin editButton {
+    button{
+        font-size: 1em;
+        padding: .2em .5em;
+        margin-top: 1em;
+        color: $light-color;
+        background-color: $highligt-color;
+        border-radius: 3px;
+    }    
+}
+
 
 .findingsDetails{
     .container{
@@ -35,13 +46,6 @@ $light-color: #FFFFFF;
             position: fixed;
         }
 
-        button{
-            font-size: 1em;
-            padding: .2em .5em;
-            margin-top: 1em;
-            color: $light-color;
-            background-color: $highligt-color;
-            border-radius: 3px;
-        }
+        @include editButton;
     }
 }

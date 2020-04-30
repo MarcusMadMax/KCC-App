@@ -894,11 +894,47 @@ body {
 }
 
 .friends .container button {
-  margin: .5em 0;
-  font-size: .5em;
-  background-color: #D82827;
+  font-size: 1em;
+  padding: .2em .5em;
+  margin-top: 1em;
   color: #FFFFFF;
-  padding: .5em;
+  background-color: #D82827;
   border-radius: 3px;
+}
+
+.join .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em auto;
+  width: 90vw;
+}
+
+.join .logos img {
+  height: 3em;
+}
+
+.join .membership {
+  border: 1px solid red;
+}
+
+.join .membership h1 {
+  border: 1px solid blue;
+  display: block;
+  font-size: 1.5em;
+  color: #4C3C72;
+}
+
+.join .membership h1 span {
+  background-color: #7FB500;
+  border-radius: 50%;
+  color: #FFFFFF;
+  padding: .15em .5em;
+  font-size: .5em;
 }
 /*# sourceMappingURL=style.css.map */
