@@ -204,13 +204,127 @@ body{
         font-weight: 300;
         background-color: rgba($color: $light-color, $alpha: .25);
 
-        span{
+        button{
+            outline: none;
             font-weight: 700;
-            color: $light-color;
-            padding-left: 1em;
         }
     }
-}
+
+    /* Full-width input fields */
+    input[type=text], input[type=password]{
+        font-size: 1em;
+        width: 100%;
+        padding: .25em 0.5em;
+        margin: .5em 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    input[type=checkbox]{
+        border: 1px solid red;
+        font-size: 2em;
+    }
+  
+  /* Set a style for all buttons */
+    button {
+        background-color: $main-color;
+        color: $text-color;
+        padding: 1em 1.5em;
+        margin: .5em auto;
+        border: none;
+        width: 100%;
+        font-size: 1em;
+        font-weight: 700;
+    }
+  
+  /* Extra styles for the cancel button */
+    .cancelbtn {
+        width: auto;
+        padding: 1em 1.5em;
+        background-color: $highligt-color;
+        color: $shine-color;
+  }
+  
+  /* Center the image and position the close button */
+    .imgcontainer {
+        text-align: center;
+        margin: 1em 0 0 0;
+        position: relative;
+    }
+  
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+  }
+  
+    .container {
+        padding: 1em 2em;
+
+        b{
+            color: $text-color;
+        }
+    }
+  
+    span.psw {
+        float: right;
+        padding-top: 1em;
+    }
+  
+  /* The Modal (background) */
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        padding-top: 60px;
+    }
+  
+  /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+  
+  /* The Close Button (x) */
+    .close {
+        position: absolute;
+        right: .25em;
+        top: -0.5em;
+        color: $highligt-color;
+        font-size: 3em;
+        font-weight: bold;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+    .cancelbtn {
+       width: 100%;
+    }
+  }
 //LogIn page ends
 
 

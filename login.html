@@ -22,24 +22,57 @@
             <div><a href="#"><i class="fab fa-google-plus-g"></i><span>Log in with Google+</span></a></div>
             <div><a href="#"><i class="far fa-envelope"></i><span>Sign up with e-mail</span></a></div>
         </div>
+        <!-- <div class="footerLogin">
+            <p>Already have an account? <a href="loginform.html"> Log In</a></p>
+        </div> -->
         <div class="footerLogin">
-            <p>Already have an account?<span> Log In</span></p>
+            <p>Already have an account?</p>
+            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
         </div>
-    </div>
+        <div id="id01" class="modal">
 
-    <script>
-        var myElement = document.getElementById('firstFour');
-        var hammer = new Hammer.Manager(myElement);
-        var swipe = new Hammer.Swipe();
-        hammer.add(swipe);
-        hammer.on('swipeleft', function () {
-            window.location = 'me.html';
-        });
-        hammer.add(swipe);
-        hammer.on('swiperight', function () {
-            window.location = 'discuss.html';
-        });
-    </script>
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="images/Tim-Burton.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+                </div>
+            </form>
+        </div>
+
+
+        <script>
+            var myElement = document.getElementById('firstFour');
+            var hammer = new Hammer.Manager(myElement);
+            var swipe = new Hammer.Swipe();
+            hammer.add(swipe);
+            hammer.on('swipeleft', function () {
+                window.location = 'me.html';
+            });
+            hammer.add(swipe);
+            hammer.on('swiperight', function () {
+                window.location = 'discuss.html';
+            });
+        </script>
 
 </body>
 
