@@ -15,7 +15,7 @@ $light-color: #FFFFFF;
     header{
         display: flex;
         justify-content: space-between;
-        // align-items: center;
+        align-items: center;
         padding: .7em;
         background-color: $main-color;
 
@@ -54,6 +54,7 @@ $light-color: #FFFFFF;
         .settings{
             align-self: flex-start;
             position: relative;
+            z-index: 50;
             
             i{
                 color: $text-color;
