@@ -724,46 +724,6 @@ body {
   color: #4C3C72;
 }
 
-.helpFeedback .container .stars {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.helpFeedback .container .stars > input {
-  display: none;
-}
-
-.helpFeedback .container .stars > label:before {
-  margin: 5px;
-  font-size: 3em;
-  font-family: FontAwesome;
-  display: inline-block;
-  content: "\f005";
-}
-
-.helpFeedback .container .stars > .half:before {
-  font-family: FontAwesome;
-  content: "\f089";
-  position: absolute;
-}
-
-.helpFeedback .container .stars > label {
-  color: #FFFFFF;
-}
-
-.helpFeedback .container .stars > input:checked + label,
-.helpFeedback .container .stars > input:checked ~ label:hover ~ label {
-  color: #D82827;
-}
-
 .helpFeedback .container p {
   color: #4C3C72;
   width: 50vw;
