@@ -525,7 +525,7 @@ body {
 .observePage .container #camera, .observePage .container #camera--view, .observePage .container #camera--sensor, .observePage .container #camera--output {
   position: fixed;
   z-index: 2;
-  height: 70.6vh;
+  height: 75.08vh;
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
